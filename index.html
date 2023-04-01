@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cinemax</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="container">
+        <nav class="mobile-nav">
+          <ul class="mobile-list">
+            <li><a href="#" class="mobile-link">Home</a></li>
+            <li><a href="#" class="mobile-link">Category</a></li>
+            <li><a href="#" class="mobile-link active">LIVE</a></li>
+          </ul>
+        </nav>
+        <nav class="nav-box">
+          <div class="nav">
+            <div class="nav-left">
+              <div class="logo-box">
+                <button class=" menu-btn-box">
+                  <a href="#" class="menu-btn close-btn menu-hide">
+                    <ion-icon name="close-outline" class="close-icon"></ion-icon>
+                  </a>
+                  <a href="#" class="menu-btn ham-btn">
+                    <span class="ham-one ham-line"></span>
+                    <span class="ham-two ham-line"></span>
+                    <span class="ham-three ham-line"></span>
+                  </a>
+                </button>
+                <h1 class="logo">Cine
+                  <span class="logo-blue">Flix</span>
+                </h1>
+              </div>
+              <nav class="not-mobile-nav">
+                <ul class="not-mobile-list">
+                  <li><a href="#" class="not-mobile-link">Home</a></li>
+                  <li><a href="#" class="not-mobile-link">Category</a></li>
+                  <li><a href="#" class="not-mobile-link active">LIVE</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="nav-right">
+              <div class="search-box">
+                <input type="text" class="search-input" placeholder="I'm looking for...">
+                <ion-icon name="search-outline" class="search-icon search-mobile-close-btn"></ion-icon>
+              </div>
+              <div class="sign-in-box">
+                Sign in 
+                <ion-icon name="log-in-outline" class="sign-in-icon"></ion-icon>
+              </div>
+            </div>
+          </div>
+          <div class="search-mobile">
+            <div class="search-mobile-box">
+              <input type="text" class="search-mobile-input" placeholder="I'm looking for...">
+              <ion-icon name="search-outline" class="search-mobile-icon"></ion-icon>
+            </div>
+            <ion-icon name="close-circle-outline" class="search-mobile-close search-mobile-close-btn"></ion-icon>
+          </div>
+        </nav>
+
+      </div>
+    </header>
+    <section class="best-movie">
+      <img src="John-Wick-3.jpg" alt="John wick" class="best-movie-img">
+      <div class="best-movie-content">
+        <ul class="best-movie-list">
+          <li class="best-movie-item">
+            <ion-icon class="best-movie-icon" name="ticket"></ion-icon>
+            <!-- <ion-icon name="film"></ion-icon> -->
+            Action/Thriller
+          </li>
+          <li class="best-movie-item">
+            <ion-icon class="best-movie-icon"  name="calendar"></ion-icon>
+            2019
+          </li>
+          <li class="best-movie-item">
+            <ion-icon class="best-movie-icon"  name="time"></ion-icon>
+            2h 11m
+          </li>
+          <li class="best-movie-item">
+            <span class="best-movie-span">4K</span>
+          </li>
+        </ul>
+        <h2 class="best-movie-title">
+          John Wick: Chapter 3 - Parabellum
+        </h2>
+      </div>
+    </section>
+    <section class="section-filter">
+      <div class="dropdowns">
+        <div class="dropdown dropdown-genre" contenteditable="">
+          <input type="text" class="textBox textBox-genre" placeholder="All genres">
+          <div class="options options-genre">
+            <div class="option option-genre" data-genre="All genres">All genres</div>
+            <div class="option option-genre" data-genre="Action">Action</div>
+            <div class="option option-genre" data-genre="Adventure">Adventure</div>
+            <div class="option option-genre" data-genre="Animal">Animal</div>
+            <div class="option option-genre" data-genre="Animation">Animation</div>
+            <div class="option option-genre" data-genre="Biography">Biography</div>
+          </div>
+        </div>
+        <div class="dropdown dropdown-years" contenteditable="">
+          <input type="text" class="textBox textBox-years" placeholder="All the years">
+          <div class="options options-years">
+            <div class="option option-years" data-years="All the years">All the years</div>
+            <div class="option option-years" data-years="2023">2023</div>
+            <div class="option option-years" data-years="2021-2023">2021-2023</div>
+            <div class="option option-years" data-years="2020-2010">2020-2010</div>
+            <div class="option option-years" data-years="1999-2009">1999-2009</div>
+            <div class="option option-years" data-years="1988-1998">1988-1998</div>
+          </div>
+        </div>
+      </div>
+      <nav class="filter-nav">
+        <div class="marker"></div>
+        <a href="#" class="filter-link active-filter">Featured</a>
+        <a href="#" class="filter-link">Popular</a>
+        <a href="#" class="filter-link">Newest</a>
+      </nav>
+    </section>
+    <section class="section-movies">
+      <div class="movie-grid">
+        <div class="movie">
+          <figure class="movie-image-box">
+            <img class="movie-image" src="red-notice.jpg" alt="woman in red with two man sitting next to her" >
+            <div class="movie-overlay">
+              <div class="movie-save">
+                <ion-icon class="movie-save-icon" name="bookmark-outline"></ion-icon>
+              </div>
+              <div class="movie-rating">
+                6.4
+                <ion-icon class="movie-rating-icon" name="star-outline"></ion-icon>
+              </div>
+              <ion-icon class="movie-button" name="play-circle-outline"></ion-icon>
+            </div>
+          </figure>
+          <h2 class="movie-name">Red Notice</h2>
+          <span class="movie-genre">Action/Comedy <span class="movie-year">2021</span></span>
+        </div>
+        <div class="movie">
+          <figure class="movie-image-box">
+            <img class="movie-image" src="spider-men.jpg" alt="woman in red with two man sitting next to her" >
+            <div class="movie-overlay">
+              <div class="movie-save">
+                <ion-icon class="movie-save-icon" name="bookmark-outline"></ion-icon>
+              </div>
+              <div class="movie-rating">
+                6.4
+                <ion-icon class="movie-rating-icon" name="star-outline"></ion-icon>
+              </div>
+              <ion-icon class="movie-button" name="play-circle-outline"></ion-icon>
+            </div>
+          </figure>
+          <h2 class="movie-name">Spider-Man: Homecoming</h2>
+          <span class="movie-genre">Action/Adventure <span class="movie-year">2017</span></span>
+        </div>
+        <div class="movie">
+          <figure class="movie-image-box">
+            <img class="movie-image" src="matrix.jpg" alt="woman in red with two man sitting next to her" >
+            <div class="movie-overlay">
+              <div class="movie-save">
+                <ion-icon class="movie-save-icon" name="bookmark-outline"></ion-icon>
+              </div>
+              <div class="movie-rating">
+                6.4
+                <ion-icon class="movie-rating-icon" name="star-outline"></ion-icon>
+              </div>
+              <ion-icon class="movie-button" name="play-circle-outline"></ion-icon>
+            </div>
+          </figure>
+          <h2 class="movie-name">The Matrix Resurrections</h2>
+          <span class="movie-genre">Sci-fi/Action<span class="movie-year">2021</span></span>
+        </div>
+        <div class="movie">
+          <figure class="movie-image-box">
+            <img class="movie-image" src="eternals.jpg" alt="woman in red with two man sitting next to her" >
+            <div class="movie-overlay">
+              <div class="movie-save">
+                <ion-icon class="movie-save-icon" name="bookmark-outline"></ion-icon>
+              </div>
+              <div class="movie-rating">
+                6.4
+                <ion-icon class="movie-rating-icon" name="star-outline"></ion-icon>
+              </div>
+              <ion-icon class="movie-button" name="play-circle-outline"></ion-icon>
+            </div>
+          </figure>
+          <h2 class="movie-name">Eternals</h2>
+          <span class="movie-genre">Adventure/Action<span class="movie-year">2021</span></span>
+        </div>
+        <div class="movie">
+          <figure class="movie-image-box">
+            <img class="movie-image" src="dune.jpg" alt="woman in red with two man sitting next to her" >
+            <div class="movie-overlay">
+              <div class="movie-save">
+                <ion-icon class="movie-save-icon" name="bookmark-outline"></ion-icon>
+              </div>
+              <div class="movie-rating">
+                6.4
+                <ion-icon class="movie-rating-icon" name="star-outline"></ion-icon>
+              </div>
+              <ion-icon class="movie-button" name="play-circle-outline"></ion-icon>
+            </div>
+          </figure>
+          <h2 class="movie-name">Dune</h2>
+          <span class="movie-genre">Sci-fi/Adventure<span class="movie-year">2021</span></span>
+        </div>
+        <div class="movie">
+          <figure class="movie-image-box">
+            <img class="movie-image" src="1917.jpg" alt="woman in red with two man sitting next to her" >
+            <div class="movie-overlay">
+              <div class="movie-save">
+                <ion-icon class="movie-save-icon" name="bookmark-outline"></ion-icon>
+              </div>
+              <div class="movie-rating">
+                6.4
+                <ion-icon class="movie-rating-icon" name="star-outline"></ion-icon>
+              </div>
+              <ion-icon class="movie-button" name="play-circle-outline"></ion-icon>
+            </div>
+          </figure>
+          <h2 class="movie-name">1917</h2>
+          <span class="movie-genre">War/Drama<span class="movie-year">2021</span></span>
+        </div>
+        <div class="movie">
+          <figure class="movie-image-box">
+            <img class="movie-image" src="shang-chi.jpg" alt="woman in red with two man sitting next to her" >
+            <div class="movie-overlay">
+              <div class="movie-save">
+                <ion-icon class="movie-save-icon" name="bookmark-outline"></ion-icon>
+              </div>
+              <div class="movie-rating">
+                6.4
+                <ion-icon class="movie-rating-icon" name="star-outline"></ion-icon>
+              </div>
+              <ion-icon class="movie-button" name="play-circle-outline"></ion-icon>
+            </div>
+          </figure>
+          <h2 class="movie-name">Shang-Chi and The Legend of The Ten Rings</h2>
+          <span class="movie-genre">Action/Fantasy<span class="movie-year">2021</span></span>
+        </div>
+        <div class="movie">
+          <figure class="movie-image-box">
+            <img class="movie-image" src="casino-royale.jpg" alt="woman in red with two man sitting next to her" >
+            <div class="movie-overlay">
+              <div class="movie-save">
+                <ion-icon class="movie-save-icon" name="bookmark-outline"></ion-icon>
+              </div>
+              <div class="movie-rating">
+                6.4
+                <ion-icon class="movie-rating-icon" name="star-outline"></ion-icon>
+              </div>
+              <ion-icon class="movie-button" name="play-circle-outline"></ion-icon>
+            </div>
+          </figure>
+          <h2 class="movie-name">Casino Royale</h2>
+          <span class="movie-genre">Action/Adventure<span class="movie-year">2021</span></span>
+        </div>
+        <div class="movie">
+          <figure class="movie-image-box">
+            <img class="movie-image" src="dark-knight.jpg" alt="woman in red with two man sitting next to her" >
+            <div class="movie-overlay">
+              <div class="movie-save">
+                <ion-icon class="movie-save-icon" name="bookmark-outline"></ion-icon>
+              </div>
+              <div class="movie-rating">
+                6.4
+                <ion-icon class="movie-rating-icon" name="star-outline"></ion-icon>
+              </div>
+              <ion-icon class="movie-button" name="play-circle-outline"></ion-icon>
+            </div>
+          </figure>
+          <h2 class="movie-name">The Dark Knight</h2>
+          <span class="movie-genre">Action/Adventure<span class="movie-year">2021</span></span>
+        </div>
+        <div class="movie">
+          <figure class="movie-image-box">
+            <img class="movie-image" src="panther.jpg" alt="woman in red with two man sitting next to her" >
+            <div class="movie-overlay">
+              <div class="movie-save">
+                <ion-icon class="movie-save-icon" name="bookmark-outline"></ion-icon>
+              </div>
+              <div class="movie-rating">
+                6.4
+                <ion-icon class="movie-rating-icon" name="star-outline"></ion-icon>
+              </div>
+              <ion-icon class="movie-button" name="play-circle-outline"></ion-icon>
+            </div>
+          </figure>
+          <h2 class="movie-name">Black Panther</h2>
+          <span class="movie-genre">Action/Adventure<span class="movie-year">2021</span></span>
+        </div>
+        <div class="movie">
+          <figure class="movie-image-box">
+            <img class="movie-image" src="venom.jpg" alt="woman in red with two man sitting next to her" >
+            <div class="movie-overlay">
+              <div class="movie-save">
+                <ion-icon class="movie-save-icon" name="bookmark-outline"></ion-icon>
+              </div>
+              <div class="movie-rating">
+                6.4
+                <ion-icon class="movie-rating-icon" name="star-outline"></ion-icon>
+              </div>
+              <ion-icon class="movie-button" name="play-circle-outline"></ion-icon>
+            </div>
+          </figure>
+          <h2 class="movie-name">Venom</h2>
+          <span class="movie-genre">Action/Adventure<span class="movie-year">2021</span></span>
+        </div>
+        <div class="movie">
+          <figure class="movie-image-box">
+            <img class="movie-image" src="LOTR.jpg" alt="woman in red with two man sitting next to her" >
+            <div class="movie-overlay">
+              <div class="movie-save">
+                <ion-icon class="movie-save-icon" name="bookmark-outline"></ion-icon>
+              </div>
+              <div class="movie-rating">
+                6.4
+                <ion-icon class="movie-rating-icon" name="star-outline"></ion-icon>
+              </div>
+              <ion-icon class="movie-button" name="play-circle-outline"></ion-icon>
+            </div>
+          </figure>
+          <h2 class="movie-name">Lord Of The Rings: Return Of The King</h2>
+          <span class="movie-genre">Fantasy/Adventure<span class="movie-year">2021</span></span>
+        </div>
+        <div class="movie">
+          <figure class="movie-image-box">
+            <img class="movie-image" src="saving-private-ryan.jpg" alt="woman in red with two man sitting next to her" >
+            <div class="movie-overlay">
+              <div class="movie-save">
+                <ion-icon class="movie-save-icon" name="bookmark-outline"></ion-icon>
+              </div>
+              <div class="movie-rating">
+                6.4
+                <ion-icon class="movie-rating-icon" name="star-outline"></ion-icon>
+              </div>
+              <ion-icon class="movie-button" name="play-circle-outline"></ion-icon>
+            </div>
+          </figure>
+          <h2 class="movie-name">Saving Private Ryan</h2>
+          <span class="movie-genre">War/Action<span class="movie-year">2021</span></span>
+        </div>
+        <div class="movie">
+          <figure class="movie-image-box">
+            <img class="movie-image" src="endgame.jpg" alt="woman in red with two man sitting next to her" >
+            <div class="movie-overlay">
+              <div class="movie-save">
+                <ion-icon class="movie-save-icon" name="bookmark-outline"></ion-icon>
+              </div>
+              <div class="movie-rating">
+                6.4
+                <ion-icon class="movie-rating-icon" name="star-outline"></ion-icon>
+              </div>
+              <ion-icon class="movie-button" name="play-circle-outline"></ion-icon>
+            </div>
+          </figure>
+          <h2 class="movie-name">Avengers:Endgame</h2>
+          <span class="movie-genre">Action/Sci-fi<span class="movie-year">2021</span></span>
+        </div>
+        <div class="movie">
+          <figure class="movie-image-box">
+            <img class="movie-image" src="ww84.jpg" alt="woman in red with two man sitting next to her" >
+            <div class="movie-overlay">
+              <div class="movie-save">
+                <ion-icon class="movie-save-icon" name="bookmark-outline"></ion-icon>
+              </div>
+              <div class="movie-rating">
+                6.4
+                <ion-icon class="movie-rating-icon" name="star-outline"></ion-icon>
+              </div>
+              <ion-icon class="movie-button" name="play-circle-outline"></ion-icon>
+            </div>
+          </figure>
+          <h2 class="movie-name">Wonder Woman 1985</h2>
+          <span class="movie-genre">Action/Adventure<span class="movie-year">2020</span></span>
+        </div>
+        <div class="movie">
+          <figure class="movie-image-box">
+            <img class="movie-image" src="captain-marvel.jpg" alt="woman in red with two man sitting next to her" >
+            <div class="movie-overlay">
+              <div class="movie-save">
+                <ion-icon class="movie-save-icon" name="bookmark-outline"></ion-icon>
+              </div>
+              <div class="movie-rating">
+                6.4
+                <ion-icon class="movie-rating-icon" name="star-outline"></ion-icon>
+              </div>
+              <ion-icon class="movie-button" name="play-circle-outline"></ion-icon>
+            </div>
+          </figure>
+          <h2 class="movie-name">Captain Marvel</h2>
+          <span class="movie-genre">Action/Sci-fi<span class="movie-year">2021</span></span>
+        </div>
+        <div class="movie">
+          <figure class="movie-image-box">
+            <img class="movie-image" src="interstaller.jpg" alt="woman in red with two man sitting next to her" >
+            <div class="movie-overlay">
+              <div class="movie-save">
+                <ion-icon class="movie-save-icon" name="bookmark-outline"></ion-icon>
+              </div>
+              <div class="movie-rating">
+                6.4
+                <ion-icon class="movie-rating-icon" name="star-outline"></ion-icon>
+              </div>
+              <ion-icon class="movie-button" name="play-circle-outline"></ion-icon>
+            </div>
+          </figure>
+          <h2 class="movie-name">Interstellar</h2>
+          <span class="movie-genre">Sci-fi/Adventure<span class="movie-year">2014</span></span>
+        </div>
+        <div class="movie">
+          <figure class="movie-image-box">
+            <img class="movie-image" src="gladiator.jpg" alt="woman in red with two man sitting next to her" >
+            <div class="movie-overlay">
+              <div class="movie-save">
+                <ion-icon class="movie-save-icon" name="bookmark-outline"></ion-icon>
+              </div>
+              <div class="movie-rating">
+                6.4
+                <ion-icon class="movie-rating-icon" name="star-outline"></ion-icon>
+              </div>
+              <ion-icon class="movie-button" name="play-circle-outline"></ion-icon>
+            </div>
+          </figure>
+          <h2 class="movie-name">Gladiator</h2>
+          <span class="movie-genre">Action/Adventure<span class="movie-year">2000</span></span>
+        </div>
+      </div>
+      <div class="load-more-box">
+        <a href="#" class="load-more">load more</a>
+      </div>
+    </section>
+    <section class="section-category">
+      <h2 class="category-heading">Category</h2>
+      <div class="category-grid">
+        <div class="category">
+          <figure class="category-image-box">
+            <img src="action.jpg" alt="john wick" class="category-img">
+            <div class="category-overlay">
+              <span class="category-genre">Action</span>
+              <span class="category-number">100</span>
+            </div>
+          </figure>
+        </div>
+        <div class="category">
+          <figure class="category-image-box">
+            <img src="crime.jpg" alt="john wick" class="category-img">
+            <div class="category-overlay">
+              <span class="category-genre">Crime</span>
+              <span class="category-number">20</span>
+            </div>
+          </figure>
+        </div>
+        <div class="category">
+          <figure class="category-image-box">
+            <img src="sci-fi.jpg" alt="john wick" class="category-img">
+            <div class="category-overlay">
+              <span class="category-genre">SCI-FI</span>
+              <span class="category-number">80</span>
+            </div>
+          </figure>
+        </div>
+        <div class="category">
+          <figure class="category-image-box">
+            <img src="comedy.jpg" alt="john wick" class="category-img">
+            <div class="category-overlay">
+              <span class="category-genre">Comedy</span>
+              <span class="category-number">50</span>
+            </div>
+          </figure>
+        </div>
+        <div class="category">
+          <figure class="category-image-box">
+            <img src="thriller.webp" alt="john wick" class="category-img">
+            <div class="category-overlay">
+              <span class="category-genre">Thriller</span>
+              <span class="category-number">20</span>
+            </div>
+          </figure>
+        </div>
+        <div class="category">
+          <figure class="category-image-box">
+            <img src="horror.jpg" alt="john wick" class="category-img">
+            <div class="category-overlay">
+              <span class="category-genre">Horror</span>
+              <span class="category-number">80</span>
+            </div>
+          </figure>
+        </div>
+        <div class="category">
+          <figure class="category-image-box">
+            <img src="adventure.jpg" alt="john wick" class="category-img">
+            <div class="category-overlay">
+              <span class="category-genre">Adventure</span>
+              <span class="category-number">100</span>
+            </div>
+          </figure>
+        </div>
+        <div class="category">
+          <figure class="category-image-box">
+            <img src="animated.jpg" alt="john wick" class="category-img">
+            <div class="category-overlay">
+              <span class="category-genre">Animation</span>
+              <span class="category-number">200</span>
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="section-live">
+      <h2 class="live-heading">Live Tv Shows</h2>
+      <div class="live-grid">
+        <div class="live">
+          <figure class="live-img-box">
+            <img src="planet.jpg" alt="planet" class="live-img">
+            <div class="live-overlay">
+              <div class="live-live">live</div>
+              <ion-icon class="live-button" name="play-circle-outline"></ion-icon>
+              <div class="live-views"><span class="live-views-number">305K</span>viewers</div>
+            </div>
+          </figure>
+          <div class="live-content">
+            <img src="bbcamerica.jpg" alt="" class="live-home-box-img">
+            <div class="live-description">
+              <h3 class="live-name">Planet Earth II</h3>
+              <span class="live-season">Season 1 - Islands</span>
+            </div>
+          </div>
+        </div>
+        <div class="live">
+          <figure class="live-img-box">
+            <img src="got.jpg" alt="planet" class="live-img">
+            <div class="live-overlay">
+              <div class="live-live">live</div>
+              <ion-icon class="live-button" name="play-circle-outline"></ion-icon>
+              <div class="live-views"><span class="live-views-number">1.7M</span>viewers</div>
+            </div>
+          </figure>
+          <div class="live-content">
+            <img src="HBO-Logo-square.jpg" alt="" class="live-home-box-img">
+            <div class="live-description">
+              <h3 class="live-name">Game of Thrones</h3>
+              <span class="live-season">Season 5 - Mother's Mercy</span>
+            </div>
+          </div>
+        </div>
+        <div class="live">
+          <figure class="live-img-box">
+            <img src="vikins.jpg" alt="planet" class="live-img">
+            <div class="live-overlay">
+              <div class="live-live">live</div>
+              <ion-icon class="live-button" name="play-circle-outline"></ion-icon>
+              <div class="live-views"><span class="live-views-number">468K</span>viewers</div>
+            </div>
+          </figure>
+          <div class="live-content">
+            <img src="HBO-Logo-square.jpg" alt="" class="live-home-box-img">
+            <div class="live-description">
+              <h3 class="live-name">Vikings</h3>
+              <span class="live-season">Season 4 - What Might Have Been</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-up-box">
+        <div class="footer-logo-box">
+          <div class="footer-logo-container">
+            <div class="footer-logo">Cine <span class="footer-blue-logo">Flix</span> </div>
+          <p class="footer-logo-description">
+            Movies & TV Shows, Online cinema, <br>
+            Movie database HTML Template.
+          </p>
+          <ul class="footer-socials">
+            <li>
+              <a href="#" class="footer-social-link">
+                <ion-icon name="logo-twitter" class="footer-social-icon"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-social-link">
+                <ion-icon name="logo-instagram" class="footer-social-icon"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-social-link">
+                <ion-icon name="logo-tiktok" class="footer-social-icon"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-social-link">
+                <ion-icon name="logo-youtube" class="footer-social-icon"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="footer-social-link">
+                <ion-icon name="logo-facebook" class="footer-social-icon"></ion-icon>
+              </a>
+            </li>
+          </ul>
+          </div>
+        </div>
+        <div class="links-grid">
+          <div class="link-box">
+            <h4 class="link-heading">CineFlix</h4>
+            <ul class="link-list">
+              <li><a href="#" class="link-link">About us</a></li>
+              <li><a href="#" class="link-link">My Profile</a></li>
+              <li><a href="#" class="link-link">Pricing plans</a></li>
+              <li><a href="#" class="link-link">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="link-box">
+            <h4 class="link-heading">Browse</h4>
+            <ul class="link-list">
+              <li><a href="#" class="link-link">Live Tv</a></li>
+              <li><a href="#" class="link-link">Live News</a></li>
+              <li><a href="#" class="link-link">Live Sports</a></li>
+              <li><a href="#" class="link-link">Streaming Library</a></li>
+            </ul>
+          </div>
+          <div class="link-box">
+            <h4 class="link-heading">&nbsp;</h4>
+            <ul class="link-list">
+              <li><a href="#" class="link-link">TV Shows</a></li>
+              <li><a href="#" class="link-link">Movies</a></li>
+              <li><a href="#" class="link-link">Kids</a></li>
+              <li><a href="#" class="link-link">Collections</a></li>
+            </ul>
+          </div>
+          <div class="link-box">
+            <h4 class="link-heading">Help</h4>
+            <ul class="link-list">
+              <li><a href="#" class="link-link">Acount & Billing</a></li>
+              <li><a href="#" class="link-link">Plans & Pricing</a></li>
+              <li><a href="#" class="link-link">Supported devices</a></li>
+              <li><a href="#" class="link-link">Accessibility</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-down-box">
+        <p class="copyright-description">
+          &copy; copyright 2023 CineFlix
+        </p>
+        <div class="copyright-terms-box">
+          <p class="copyright-policy">
+            Privacy policy
+          </p>
+          <p class="copyright-terms">
+            Terms and conditions
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
